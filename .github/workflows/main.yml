@@ -26,7 +26,7 @@ jobs:
     - name: List files
       run: ls
     - name: Publish .NET Core Project
-      run: dotnet publish blazor-wasm.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
+      run: dotnet publish github-wasm.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
